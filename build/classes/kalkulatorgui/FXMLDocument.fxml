@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kalkulatorgui.FXMLDocumentController">
+   <children>
+      <Pane prefHeight="538.0" prefWidth="263.0" style="-fx-background-color: #fff;">
+         <children>
+            <JFXTextField fx:id="kolomAngka" alignment="CENTER_RIGHT" editable="false" layoutX="17.0" layoutY="78.0" prefHeight="52.0" prefWidth="230.0" promptText="0">
+               <font>
+                  <Font name="Consolas" size="28.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXButton fx:id="angka1" layoutX="36.0" layoutY="148.0" onAction="#angka1Aksi" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #ecf0f1;" text="1" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="angka2" layoutX="85.0" layoutY="148.0" onAction="#angka2Aksi" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #ecf0f1;" text="2" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="angka3" layoutX="136.0" layoutY="148.0" onAction="#angka3Aksi" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #ecf0f1;" text="3" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="angka4" layoutX="36.0" layoutY="205.0" onAction="#angka4Aksi" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #ecf0f1;" text="4" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="angka5" layoutX="85.0" layoutY="205.0" onAction="#angka5Aksi" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #ecf0f1;" text="5" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="angka6" layoutX="136.0" layoutY="205.0" onAction="#angka6Aksi" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #ecf0f1;" text="6" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="angka7" layoutX="36.0" layoutY="260.0" onAction="#angka7Aksi" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #ecf0f1;" text="7" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="angka8" layoutX="85.0" layoutY="260.0" onAction="#angka8Aksi" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #ecf0f1;" text="8" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="angka9" layoutX="136.0" layoutY="260.0" onAction="#angka9Aksi" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #ecf0f1;" text="9" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="c" disable="true" layoutX="187.0" layoutY="148.0" onAction="#aksiC" prefHeight="44.0" prefWidth="42.0" style="-fx-background-color: #bdc3c7;" text="C" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="tambah" disable="true" layoutX="136.0" layoutY="373.0" onAction="#aksiTambah" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #f1c40f;" text="+" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="kurang" disable="true" layoutX="187.0" layoutY="373.0" onAction="#aksiKurang" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #f1c40f;" text="-" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="bagi" disable="true" layoutX="187.0" layoutY="432.0" onAction="#aksiBagi" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #f1c40f;" text="/" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="kali" disable="true" layoutX="136.0" layoutY="432.0" onAction="#aksiKali" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #f1c40f;" text="x" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="hasil" disable="true" layoutX="187.0" layoutY="205.0" onAction="#aksiHasil" prefHeight="156.0" prefWidth="42.0" style="-fx-background-color: #e74c3c;" text="=" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="nol" layoutX="136.0" layoutY="316.0" onAction="#aksiNol" prefHeight="44.0" prefWidth="42.0" style="-fx-background-color: #bdc3c7;" text="0" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#2f2f2f" layoutX="17.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simple Calculator">
+               <font>
+                  <Font name="Consolas" size="21.0" />
+               </font>
+            </Text>
+            <Text fill="#b2b2b2" layoutX="157.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by zeraneL" wrappingWidth="67.841796875">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="koma" disable="true" layoutX="85.0" layoutY="373.0" onAction="#aksiKoma" prefHeight="99.0" prefWidth="42.0" style="-fx-background-color: #f39c12;" text="," textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="faktorial" disable="true" layoutX="36.0" layoutY="373.0" onAction="#aksiFaktorial" prefHeight="99.0" prefWidth="42.0" style="-fx-background-color: #3498db;" text="!" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="duaNol" layoutX="36.0" layoutY="316.0" onAction="#aksiDuaNol" prefHeight="44.0" prefWidth="91.0" style="-fx-background-color: #bdc3c7;" text="00" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
